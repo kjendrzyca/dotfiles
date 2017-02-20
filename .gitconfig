@@ -1,0 +1,11 @@
+[push]
+	default = simple
+[diff]
+	tool = kdiff3
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	keepBackup = false
+	trustExitCode = false
+[core]
+	pager = less -erX
