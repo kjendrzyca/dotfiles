@@ -1,3 +1,6 @@
+[user]
+  email = kjendrzyca@gmail.com
+  name = kjendrzyca
 [push]
 	default = simple
 [diff]
@@ -9,3 +12,5 @@
 	trustExitCode = false
 [core]
 	pager = less -erX
+[help]
+	autocorrect = 1
