@@ -1,0 +1,47 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "git.enabled": true,
+    "git.autofetch": false,
+    "diffEditor.renderSideBySide": false,
+    "window.zoomLevel": 0,
+
+    "editor.fontFamily": "'Liberation Mono', 'Courier New', monospace",
+    "editor.fontSize": 16,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "none",
+    "editor.tabSize": 2,
+
+
+    "explorer.openEditors.visible": 0,
+    "explorer.autoReveal": false,
+
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+
+    "workbench.iconTheme": "vs-seti",
+    "workbench.activityBar.visible": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Atom One Dark",
+
+    "atomKeymap.promptV3Features": true,
+    "editor.minimap.enabled": false,
+
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.keymap": "alternate",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+}
