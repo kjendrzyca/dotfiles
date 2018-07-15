@@ -141,9 +141,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# lock screen
+# lock screen (png only)
 # exec --no-startup-id xautolock -time 10 -locker 'i3lock -d -c 000000'
-bindsym $mod+Shift+x exec i3lock -d -i "$HOME/Dropbox/Photos/wallpapers/seiser_alm_italy.png"
+bindsym $mod+Shift+x exec i3lock -d -i "$HOME/Dropbox/Photos/wallpapers/justdoit1.png"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
