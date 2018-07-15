@@ -15,4 +15,4 @@ sudo pacman -S urxvt-perls
 yaourt light-git
 yaourt shutter
 yaourt urxvtconfig
-
+sudo pacman -S feh

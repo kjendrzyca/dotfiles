@@ -140,6 +140,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
 # lock screen
 # exec --no-startup-id xautolock -time 10 -locker 'i3lock -d -c 000000'
 bindsym $mod+Shift+x exec i3lock -d -i "$HOME/Dropbox/Photos/wallpapers/seiser_alm_italy.png"
@@ -199,8 +200,9 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 
 # startup
+exec --no-startup-id feh --bg-scale "$HOME/Dropbox/Photos/wallpapers/mountains1.jpg"
 exec --no-startup-id dropbox start &
-exec $HOME/.config/i3/touchpad.sh
+exec --no-startup-id $HOME/.config/i3/touchpad.sh
 exec --no-startup-id compton -b
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
