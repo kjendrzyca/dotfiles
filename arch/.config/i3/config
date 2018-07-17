@@ -143,7 +143,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # lock screen (png only)
 # exec --no-startup-id xautolock -time 10 -locker 'i3lock -d -c 000000'
-bindsym $mod+Shift+x exec i3lock -d -i "$HOME/Dropbox/Photos/wallpapers/justdoit1.png"
+bindsym $mod+Shift+x exec i3lock -d -i $HOME/Dropbox/Photos/wallpapers/justdoit1.png, exec playerctl pause
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
