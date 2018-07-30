@@ -213,3 +213,6 @@ bindsym $mod+Shift+f exec urxvt -e ranger
 
 # disable title bar
 for_window [class="^.*"] border pixel 1
+
+# move to workspace
+for_window [class="Spotify"] move container to workspace 9
