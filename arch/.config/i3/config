@@ -201,7 +201,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 
 # startup
-exec --no-startup-id feh --bg-scale "$HOME/Dropbox/Photos/wallpapers/mountains1.jpg"
+exec --no-startup-id feh --bg-scale "$HOME/Dropbox/Photos/wallpapers/chile.jpeg"
 exec --no-startup-id dropbox start &
 exec --no-startup-id $HOME/.config/i3/touchpad.sh
 exec --no-startup-id compton -b
@@ -216,3 +216,10 @@ for_window [class="^.*"] border pixel 1
 
 # move to workspace
 for_window [class="Spotify"] move container to workspace 9
+
+# screenshots and screen recording
+bindsym Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 ~/Pictures/Screenshot-$(date -Iseconds | cut -d'+' -f1).png"
+bindsym Mod4+Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 | xclip -selection clipboard -t image/png"
+bindsym Shift+Print exec ~/.config/i3/record-screen.sh byzanz
+bindsym Shift+Ctrl+Print exec ~/.config/i3/record-screen.sh gif
+bindsym Shift+Mod4+Print exec ~/.config/i3/record-screen.sh ogv
