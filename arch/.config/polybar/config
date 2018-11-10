@@ -30,7 +30,7 @@ alert = #bd2c40
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 ;xrandr -q | grep " connected" | cut -d ' ' -f1
-monitor = eDP1
+monitor = eDP1 HDMI1 HDMI2
 monitor-strict = false
 width = 100%
 height = 27
