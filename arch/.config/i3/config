@@ -39,7 +39,7 @@ bindsym $mod+Shift+q kill
 focus_follows_mouse no
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -show run -run-list-command ". ~/.config/i3/list-zsh-aliases.sh" -run-command "/bin/bash -i -c '{cmd}'"
 # start dmenu window
 bindsym $mod+Tab exec rofi -show window
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -207,6 +207,7 @@ exec --no-startup-id $HOME/.config/i3/touchpad.sh
 exec --no-startup-id compton -b
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
+exec --no-startup-id dunst
 
 # ranger
 bindsym $mod+Shift+f exec urxvt -e ranger
