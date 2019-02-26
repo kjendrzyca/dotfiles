@@ -60,7 +60,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center =
-modules-right = filesystem backlight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = pomo filesystem backlight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -430,6 +430,13 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/pomo]
+  type = custom/script
+  exec = echo %{T4}`~/.config/polybar/pomodoro/pomo_state.py`%{T-}
+  exec-if = pgrep -f pomo_runner
+  interval = 0.5
+  format-underline = #5D6D7E
 
 [settings]
 screenchange-reload = true
