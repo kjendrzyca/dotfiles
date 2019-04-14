@@ -219,8 +219,5 @@ for_window [class="^.*"] border pixel 2
 for_window [class="Spotify"] move container to workspace 9
 
 # screenshots and screen recording
-bindsym Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 ~/Pictures/Screenshot-$(date -Iseconds | cut -d'+' -f1).png"
-bindsym Mod4+Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 | xclip -selection clipboard -t image/png"
-bindsym Shift+Print exec ~/.config/i3/record-screen.sh byzanz
-bindsym Shift+Ctrl+Print exec ~/.config/i3/record-screen.sh gif
-bindsym Shift+Mod4+Print exec ~/.config/i3/record-screen.sh ogv
+bindsym Print exec "maim -u -s -n -c 0.157,0.333,0.466,0.4 ~/Pictures/Screenshot-$(date -Iseconds | cut -d'+' -f1).png"
+bindsym Mod4+Print exec "maim -u -s -n -c 0.157,0.333,0.466,0.4 | xclip -selection clipboard -t image/png"
