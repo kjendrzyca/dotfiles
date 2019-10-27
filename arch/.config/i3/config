@@ -143,7 +143,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # lock screen (png only)
 # exec --no-startup-id xautolock -time 10 -locker 'i3lock -d -c 000000'
-bindsym $mod+Shift+x exec i3lock -d -i $HOME/Dropbox/Photos/wallpapers/justdoit1.png, exec playerctl pause
+bindsym $mod+Shift+x exec i3lock -d -i $HOME/Dropbox/Photos/wallpapers/justdoit1.png
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -201,7 +201,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 
 # startup
-exec --no-startup-id feh --bg-fill "$HOME/Dropbox/Photos/wallpapers/justdoit2.jpg"
+exec --no-startup-id feh --bg-fill "$HOME/Dropbox/Photos/wallpapers/franxx3.jpg"
 exec --no-startup-id dropbox start &
 exec --no-startup-id $HOME/.config/i3/touchpad.sh
 exec --no-startup-id compton -b
@@ -219,5 +219,8 @@ for_window [class="^.*"] border pixel 2
 for_window [class="Spotify"] move container to workspace 9
 
 # screenshots and screen recording
-bindsym Print exec "maim -u -s -n -c 0.157,0.333,0.466,0.4 ~/Pictures/Screenshot-$(date -Iseconds | cut -d'+' -f1).png"
+bindsym Print exec "maim -u -s -n -c 0.157,0.333,0.466,0.4 ~/Pictures/Screenshots/Screenshot-$(date -Iseconds | cut -d'+' -f1).png"
 bindsym Mod4+Print exec "maim -u -s -n -c 0.157,0.333,0.466,0.4 | xclip -selection clipboard -t image/png"
+
+# emoji-picker
+bindsym $mod+i exec ~/.config/rofi/emoji.sh
