@@ -16,6 +16,10 @@ body::-webkit-scrollbar-thumb, .scroller::-webkit-scrollbar-thumb {
   border: 3px solid rgb(66, 73, 78);;  /* creates padding around scroll thumb */
 }
 
+.header {
+  background-color: rgb(47, 52, 55);
+}
+
 .page {
     /* max-width: 1000px; */
     background-color: rgb(47, 52, 55);
