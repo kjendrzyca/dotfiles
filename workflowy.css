@@ -1,0 +1,29 @@
+body {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(47, 52, 55);
+}
+
+body::-webkit-scrollbar, .scroller::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track, .scroller::-webkit-scrollbar-track {
+  background: orange;        /* color of the tracking area */
+  background: rgb(66, 73, 78);
+}
+body::-webkit-scrollbar-thumb, .scroller::-webkit-scrollbar-thumb {
+  background-color: rgb(117, 117, 117);;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(66, 73, 78);;  /* creates padding around scroll thumb */
+}
+
+.page {
+    /* max-width: 1000px; */
+    background-color: rgb(47, 52, 55);
+
+}
+
+u {
+    text-decoration: none !important;
+    background-color: #ffff00e0;
+    background-color: rgb(89,86,59);
+}
