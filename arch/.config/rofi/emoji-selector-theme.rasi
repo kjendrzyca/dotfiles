@@ -43,13 +43,9 @@
     highlight:     underline bold #ffffff;
 }
 #window {
-    font: "Noto Sans 23";
-    /* font: "Dank Mono 14"; */
-    /* width: 100%;
-    height: 100%; */
+    font: "Noto Sans 18";
     fullscreen: true;
     background-color: @background;
-    /* border:           1; */
     padding:          350  550 100 550;
 }
 #mainbox {
@@ -57,8 +53,6 @@
     padding: 0;
 }
 #message {
-    /* border:       1px dash 0px 0px ; */
-    /* border-color: @separatorcolor; */
     padding:      1px;
     enabled: false;
 }
@@ -67,8 +61,6 @@
 }
 #listview {
     fixed-height: 0;
-    /* border:       2px dash 0px 0px ; */
-    /* border-color: @separatorcolor; */
     spacing:      2px ;
     scrollbar:    true;
     padding:      2px 0px 0px ;
@@ -79,7 +71,7 @@
 }
 #element.normal.normal {
     /* background-color: @normal-background; */
-    /* text-color:       @normal-foreground; */
+    text-color:       @normal-foreground;
 }
 #element.normal.urgent {
     /* background-color: @urgent-background; */
@@ -92,7 +84,7 @@
 #element.selected.normal {
         border:        0px 0px 1px 0px solid;
     /* background-color: @selected-normal-background; */
-    /* text-color:       @selected-normal-foreground; */
+    text-color:       @normal-foreground;
 }
 #element.selected.urgent {
     /* background-color: @selected-urgent-background; */
@@ -104,7 +96,7 @@
 }
 #element.alternate.normal {
     /* background-color: @alternate-normal-background; */
-    /* text-color:       @alternate-normal-foreground; */
+    text-color:       @normal-foreground;
 }
 #element.alternate.urgent {
     /* background-color: @alternate-urgent-background; */
