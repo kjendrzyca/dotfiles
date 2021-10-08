@@ -1,17 +1,86 @@
-body {
-    color: rgba(255, 255, 255, 0.9);
-    background-color: rgb(47, 52, 55);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+a.contentLink:after {
+  content: "";
+    display: inline-block;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBmaWxsPSIjMzM3QUI3Ij48cGF0aCBkPSJNNiAxMmwxLjA2NTgxZS0xNCAxLjUwOTk2ZS0wN2M4LjMzOTI3ZS0wOC41NTIyODUuNDQ3NzE1IDEgMSAxaDkuNWwtNC4zNzExNGUtMDgtMS43NzYzNmUtMTVjLjU1MjI4NSAyLjQxNDExZS0wOCAxLS40NDc3MTUgMS0xIDIuNDE0MTFlLTA4LS41NTIyODUtLjQ0NzcxNS0xLTEtMWgtOS41bC00LjM3MTE0ZS0wOCAzLjU1MjcxZS0xNWMtLjU1MjI4NSAyLjQxNDExZS0wOC0xIC40NDc3MTUtMSAxIDAgMCAwIDguODgxNzhlLTE1IDAgOC44ODE3OGUtMTVaIj48L3BhdGg+PHBhdGggZD0iTTguMiAxNC43MjJsMS4wMDg3OWUtMDctOC4yMjU5MWUtMDhjLS42MjEwMzguNTA2NDA2LTEuMzk4NjcuNzgxNDA3LTIuMi43NzhsLTEuNTI5OWUtMDctMy41NTI3MWUtMTVjLTEuOTMzLTguNDQ5NGUtMDgtMy41LTEuNTY3LTMuNS0zLjUgOC40NDk0ZS0wOC0xLjkzMyAxLjU2Ny0zLjUgMy41LTMuNWwxLjM2NDc3ZS0wNy01LjAzNzkzZS0xMGMuODAxNDIxLS4wMDI5NTgzNSAxLjU3OTAyLjI3MjM4MSAyLjIuNzc5bC0zLjY2NDA2ZS0wOC0yLjk2MDQzZS0wOGMuNDI5OTU0LjM0NzM4NyAxLjA2MDExLjI4MDQ1MyAxLjQwNzUtLjE0OTUgLjM0NzM4Ny0uNDI5OTU0LjI4MDQ1My0xLjA2MDExLS4xNDk1LTEuNDA3NWw4LjE3MTUxZS0wOCA2LjYwMjcxZS0wOGMtMi4zNjI2Ny0xLjkwOTA4LTUuODI1NjEtMS41NDEzNy03LjczNDY5LjgyMTMwOCAtMS45MDkwOCAyLjM2MjY3LTEuNTQxMzcgNS44MjU2MS44MjEzMDggNy43MzQ2OSAyLjAxNjQ2IDEuNjI5MzMgNC44OTY5MiAxLjYyOTMzIDYuOTEzMzggMS4zMjA1NGUtMDdsLTEuNTM0OThlLTA4IDEuMjQxMDFlLTA4Yy40Mjk2NzgtLjM0NzM4Ny40OTYzODctLjk3NzMyMi4xNDktMS40MDcgLS4zNDczODctLjQyOTY3OC0uOTc3MzIyLS40OTYzODctMS40MDctLjE0OVoiPjwvcGF0aD48cGF0aCBkPSJNMTggNi41bC04LjUxNDdlLTA4IDEuMDI1NTFlLTEwYy0xLjI1ODM5LjAwMTUxNTYyLTIuNDc4NDcuNDMzMDI2LTMuNDU4IDEuMjIzbC0xLjExOTYzZS0wOSA5LjA1NzgzZS0xMGMtLjQyOTQwMS4zNDczODctLjQ5NTg4Ny45NzcwOTktLjE0ODUgMS40MDY1IC4zNDczODcuNDI5NDAxLjk3NzA5OS40OTU4ODcgMS40MDY1LjE0ODVsMS4xMTc2OGUtMDgtOS4xMDk5NWUtMDljLjYyMTEyLS41MDYyNTkgMS4zOTg3LS43ODEyNDEgMi4yLS43NzhsLTEuNTI5OWUtMDcgMy41NTI3MWUtMTVjMS45MzMtOC40NDk0ZS0wOCAzLjUgMS41NjcgMy41IDMuNSA4LjQ0OTRlLTA4IDEuOTMzLTEuNTY3IDMuNS0zLjUgMy41bC0xLjY3NDk0ZS0wNyA3LjcxMThlLTEwYy0uODAxMjAzLjAwMzY4ODkxLTEuNTc4ODMtLjI3MDk1My0yLjItLjc3N2w1LjIzNjA2ZS0wOCA0LjIzMzI2ZS0wOGMtLjQyOTY3OC0uMzQ3Mzg3LTEuMDU5NjEtLjI4MDY3OC0xLjQwNy4xNDkgLS4zNDczODcuNDI5Njc4LS4yODA2NzggMS4wNTk2MS4xNDkgMS40MDdsMS41NDU4OGUtMDcgMS4yNDgzNmUtMDdjMi4zNjMyMyAxLjkwODM5IDUuODI2MDYgMS41Mzk2OCA3LjczNDQ1LS44MjM1NDggMS45MDgzOS0yLjM2MzIzIDEuNTM5NjgtNS44MjYwNi0uODIzNTQ4LTcuNzM0NDUgLS45Nzc2ODEtLjc4OTUxNC0yLjE5NjI1LTEuMjIwNDItMy40NTI5MS0xLjIyMVoiPjwvcGF0aD48L2c+PC9zdmc+);
+    transform: rotate(-45deg);
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px 0 3px;
+    position: relative;
+    bottom: -2px;
+    left: -1px;
+    filter: brightness(0) saturate(100%) invert(89%) sepia(20%) saturate(2068%) hue-rotate(299deg) brightness(106%) contrast(113%);
 }
 
-body::-webkit-scrollbar, .scroller::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+.fs-block {
+  line-height: 26px;
+  min-height: 26px;
 }
-body::-webkit-scrollbar-track, .scroller::-webkit-scrollbar-track {
+
+.notes .fs-block {
+  line-height: 24px;
+  min-height: 24px;
+}
+
+.mirrorDiamondIcon {
+  color: rgb(255 173 167);
+}
+
+/* Roam like brackets */
+a.contentLink[href*='https://workflowy']:after {
+    content: ']]';
+    color: #5c6062; /* color of the grey dot */
+    color: #9e9e9eba;
+
+    display: inline;
+    background: none;
+    transform: none;
+    background-size: auto;
+    margin: 0;
+    position: static;
+    bottom: auto;
+    left: auto;
+    filter: none;
+
+}
+
+a.contentLink[href*='https://workflowy']:before {
+    content: '[[';
+    color: #5c6062;
+    color: #9e9e9eba;
+}
+
+html, body {
+   font-size: 16px !important;
+}
+
+body {
+    color: rgba(255, 255, 255, 0.85);
+    background-color: rgb(47, 52, 55);
+    font-family: Inter, Arial;
+    letter-spacing: .0016em;
+
+}
+
+body::-webkit-scrollbar,
+.scroller::-webkit-scrollbar,
+._nfedqb::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track,
+.scroller::-webkit-scrollbar-track,
+._nfedqb::-webkit-scrollbar-track {
   background: orange;        /* color of the tracking area */
   background: rgb(66, 73, 78);
 }
-body::-webkit-scrollbar-thumb, .scroller::-webkit-scrollbar-thumb {
-  background-color: rgb(117, 117, 117);;    /* color of the scroll thumb */
+body::-webkit-scrollbar-thumb,
+.scroller::-webkit-scrollbar-thumb,
+._nfedqb::-webkit-scrollbar-thumb {
+  background-color: rgb(117, 117, 117);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid rgb(66, 73, 78);;  /* creates padding around scroll thumb */
 }
@@ -21,13 +90,436 @@ body::-webkit-scrollbar-thumb, .scroller::-webkit-scrollbar-thumb {
 }
 
 .page {
-    /* max-width: 1000px; */
     background-color: rgb(47, 52, 55);
+    max-width: 720px;
+}
 
+/* bullets same font size */
+.children .name {
+    font-size: 16px !important;
+}
+
+/* page title font size */
+._r89jny > span::first-child {
+    font-size: 26px;
+}
+
+.children .children ._1lef0kj, .draggableNameClone > ._1lef0kj {
+    font-size: 16px;
+}
+
+i {
+    text-decoration: none !important;
+    font-style: normal !important;
+
+    background-color: rgb(89,86,59);
+    background-color: rgb(108, 103, 57);
+    background-color: #ffee003d;
+}
+
+div.done b {
+    color: rgb(124, 127, 129);
+}
+
+b {
+    color: rgba(255, 255, 255, 0.93);
 }
 
 u {
     text-decoration: none !important;
-    background-color: #ffff00e0;
-    background-color: rgb(89,86,59);
+    font-style: italic !important;
 }
+
+.contentTag {
+   color: rgba(158, 161, 162, .60) !important;
+   color: #9e9e9eba !important;
+   border-radius: 2px !important;
+}
+
+.contentTag .contentTagText {
+    text-decoration: none !important;
+}
+
+.contentLink {
+    text-decoration: none !important;
+    color: rgb(255 173 167) !important;
+}
+
+/* active left bar element */
+._jd2lwm {
+  background: rgb(71, 76, 80);
+}
+
+.leftBar {
+    font-size: 0.9em;
+}
+
+.references > .children > .project {
+    border: 1px solid rgb(71, 76, 80);
+    margin-top: 6px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 25px;
+}
+
+.references > .children {
+  padding-left: 0 !important;
+  border-left: none;
+}
+
+.references > .name {
+  font-weight: bold;
+}
+
+/* Based on the "Workflowy Re-Painter" style by @arose:
+   https://userstyles.org/styles/123554/workflowy-re-painter
+
+   Customize the "Painter for WorkFlowy" Chrome extension colors:
+   https://chrome.google.com/webstore/detail/painter-for-workflowycom/boeplfofdabogkgimajcpadbnfcmkmek */
+
+
+/* WorkFlowy Painter colors */
+
+.wfcolor-red	     {	background-color: rgba(255, 115, 105, 0.5) !important; }
+.wfcolor-orange	     {	background-color: rgba(255, 163, 68, 0.5) !important; }
+.wfcolor-yellow      {	background-color: rgba(255, 220, 73, 0.5) !important; }
+.wfcolor-lime        {	background-color: #E1FFB5 !important; }
+.wfcolor-olive	     {	background-color: #B5FFC9 !important; }
+.wfcolor-green	     {	background-color: rgba(77, 171, 154, 0.5) !important; }
+.wfcolor-teal        {	background-color: #B5FFD7 !important; }
+.wfcolor-aqua	     {	background-color: #B5FFFC !important; }
+.wfcolor-blue	     {	background-color: rgba(82, 156, 202, 0.5) !important; }
+.wfcolor-navy	     {	background-color: #B9B5FF !important; }
+.wfcolor-fuchsia     {	background-color: #F1B5FF !important; }
+.wfcolor-purple	     {	background-color: #D3B5FF !important; }
+.wfcolor-maroon      {	background-color: #C08F8F !important; }
+.wfcolor-silver      {	background-color: silver  !important; }
+.wfcolor-gray        {	background-color: gray    !important; }
+.wfcolor-black       {	background-color: black   !important; }
+.wfcolor-white       {	background-color: white   !important; }
+
+
+
+/* Invisible WorkFlowy Painter tags */
+
+[title~="#red"    ]   { color: rgba(255, 115, 105, 0.5) !important; }
+[title~="#orange" ]   { color: rgba(255, 163, 68, 0.5) !important; }
+[title~="#yellow" ]   { color: rgba(255, 220, 73, 0.5) !important; }
+[title~="#lime"   ]   { color: #E1FFB5 !important; }
+[title~="#olive"  ]   { color: #B5FFC9 !important; }
+[title~="#green"  ]   { color: rgba(77, 171, 154, 0.5) !important; }
+[title~="#teal"   ]   { color: #B5FFD7 !important; }
+[title~="#aqua"   ]   { color: #B5FFFC !important; }
+[title~="#blue"   ]   { color: rgba(82, 156, 202, 0.5) !important; }
+[title~="#navy"   ]   { color: #B9B5FF !important; }
+[title~="#fuchsia"]   { color: #F1B5FF !important; }
+[title~="#purple" ]   { color: #D3B5FF !important; }
+[title~="#maroon" ]   { color: #C08F8F !important; }
+[title~="#silver" ]   { color: silver  !important; }
+[title~="#gray"   ]   { color: gray    !important; }
+[title~="#black"  ]   { color: black   !important; }
+[title~="#white"  ]   { color: white   !important; }
+
+/*
+[title~="#a1"],
+[title~="#a2"],
+[title~="#a3"],
+[title~="#a4"],
+[title~="#a5"],
+[title~="#b"] {
+  text-transform: uppercase;
+  display: inline-block;
+  /* padding: 0 4px !important;
+  width: 32px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+*/
+
+[title~="#1p"]:before {
+  content: '🌳 '
+}
+[title~="#2p"]:before {
+  content: '🌳🌳 '
+}
+[title~="#3p"]:before {
+  content: '🌳🌳🌳 '
+}
+[title~="#4p"]:before {
+  content: '🌳🌳🌳🌳 '
+}
+[title~="#5p"]:before {
+  content: '🌳🌳🌳🌳🌳 '
+}
+[title~="#6p"]:before {
+  content: '🌳🌳🌳🌳🌳🌳 '
+}
+
+/*
+[title~="#1p"],
+[title~="#2p"],
+[title~="#3p"],
+[title~="#4p"],
+[title~="#5p"],
+[title~="#6p"] {
+  background: rgba(255, 163, 68, 0.5);
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+*/
+
+[title~="#a1"],
+[title~="#a2"],
+[title~="#a3"],
+[title~="#a4"],
+[title~="#a5"] {
+  background: rgba(255, 115, 105, 0.5) !important;
+  color: rgba(255, 115, 105, 0) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+[title~="#b"] {
+  background: rgba(255, 163, 68, 0.5) !important;
+  color: rgba(255, 163, 68, 0) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+[title~="#SP"]:before {
+  content: '👷 '
+}
+
+[title~="#Cyclic"]:before,
+[title~="#cyclic"]:before{
+  /* content: '⚡' */
+  content: '⭕ ';
+}
+
+[title~="#T"]:before,
+[title~="#Tasks"]:before{
+  content: '⚔️ ';
+}
+
+[title~="#P"]:before,
+[title~="#Kurs"]:before {
+  content: '🚀 ';
+}
+
+[title~="#Blog"]:before {
+  content: '📜 ';
+}
+
+[title~="#Book"]:before {
+  content: '📖 ';
+}
+
+[title~="#Mailing"]:before,
+[title~="#Newsletter"]:before {
+  content: '📬 ';
+}
+
+[title~="#Idea"]:before {
+  content: '💡 ';
+}
+
+[title~="#next"]:before {
+  content: '👈 ';
+}
+
+[title~="#t"] {
+  text-transform: uppercase;
+}
+
+/* Attributes */
+[title~="#Status"],
+[title~="#Source"],
+[title~="#Related"],
+[title~="#MyNotes"],
+[title~="#MySummary"],
+[title~="#Summary"],
+[title~="#RecommendedBy"],
+[title~="#Highlights"],
+[title~="#Notes"],
+[title~="#Author"] {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+[title~="#Status"]:after,
+[title~="#Source"]:after,
+[title~="#Related"]:after,
+[title~="#MyNotes"]:after,
+[title~="#MySummary"]:after,
+[title~="#Summary"]:after,
+[title~="#RecommendedBy"]:after,
+[title~="#Blog"]:after,
+[title~="#Book"]:after,
+[title~="#P"]:after,
+[title~="#Kurs"]:after,
+[title~="#E"]:after,
+[title~="#N"]:after,
+[title~="#Idea"]:after,
+[title~="#Author"]:after {
+  content: ':';
+}
+/* Attributes END */
+
+[title~="#toread"],
+[title~="#toRead"],
+[title~="#toWatch"],
+[title~="#toListen"]{
+  color: rgba(255, 255, 255, 0.85) !important;
+  background-color: rgba(82, 156, 202, 0.5);
+}
+
+[title~="#bold"] {
+  color: rgba(255, 255, 255, 0.85) !important;
+  background-color: black;
+}
+
+[title~="#highlight"],
+[title~="#kindlehighlight"] {
+  color: rgba(255, 255, 255, 0.85) !important;
+  background-color: #ffee003d;
+}
+
+[title~="#summarize"] {
+  color: rgba(255, 255, 255, 0.85) !important;
+  background-color: rgba(255, 163, 68, 0.5) !important;
+}
+
+[title~="#summarized"] {
+  color: rgba(255, 255, 255, 0.85) !important;
+  background-color: rgba(77, 171, 154, 0.5) !important;
+}
+
+[title~="#reading"],
+[title~="#watching"],
+[title~="#listening"],
+[title~="#inProgress"],
+[title~="#next"] {
+  color: rgba(255, 255, 255, 0.85) !important;
+  background-color: rgba(255, 115, 105, 0.5) !important;
+}
+
+[title~="#migrate"] {
+  color: rgba(255, 255, 255, 0.85) !important;
+  background-color: rgba(154, 109, 215, 0.5) !important;
+}
+
+[title~="#done"] {
+  color: rgba(255, 255, 255, 0.85) !important;
+  background-color: rgba(147, 114, 100, 0.5) !important;
+}
+
+[title~="#N"]:before,
+[title~="#note"]:before {
+  content: '🌱 ';
+}
+
+[title~="#E"]:before {
+  content: '🌳 ';
+}
+
+[title~="#blog"] {
+  color: rgba(255, 255, 255, 0.85) !important;
+  background-color: brown;
+}
+[title~="#blog"]:after {
+  content: ' 📜'
+}
+
+[title~="#idea"]:before {
+  content: '💡'
+}
+[title~="#todo"]:before {
+  content: '🧔'
+}
+
+
+/* Padding */
+
+.wfcolor-red,
+.wfcolor-orange,
+.wfcolor-yellow,
+.wfcolor-lime,
+.wfcolor-olive,
+.wfcolor-green,
+.wfcolor-teal,
+.wfcolor-aqua,
+.wfcolor-blue,
+.wfcolor-navy,
+.wfcolor-fuchsia,
+.wfcolor-purple,
+.wfcolor-silver,
+.wfcolor-white {
+    /* color: rgba(255, 255, 255, 0.7) !important; */
+    padding: 3px;
+    /*box-shadow: 3px 3px 3px #E6E6E6;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.wfcolor-black,
+.wfcolor-gray,
+.wfcolor-maroon {
+    /* color: rgba(255, 255, 255, 0.7) !important; */
+    padding: 3px;
+    /* box-shadow: 3px 3px 3px #E6E6E6; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* toggl button */
+.toggl-button.min.workflowy {
+    height: auto;
+    padding-top: 6px;
+    margin-right: 0;
+}
+
+
+/* limit backlinks breadcrumbs to only 2 */
+/* links */
+.project ._1tc87gv {
+  display: none;
+}
+
+.project ._1tc87gv:nth-last-child(1) {
+  display: block;
+  min-width: 400px;
+}
+
+.project ._1tc87gv:nth-last-child(3) {
+  display: block;
+  width: auto;
+}
+
+/* arrows */
+.project ._14y66vi {
+  display: none;
+}
+
+.project ._14y66vi:nth-last-child(2) {
+  display: block;
+}
+
+.project ._14y66vi {
+  display: none;
+}
+
+
+/*
+.project ._1w9npcg:nth-last-child(1) {
+  display: block;
+  position: absolute;
+  top: 28px;
+  min-width: 400px;
+  min-height: 48px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.project ._1w9npcg:nth-last-child(3) {
+  display: block;
+  min-width: 400px;
+}
+*/
